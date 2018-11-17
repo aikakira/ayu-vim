@@ -34,6 +34,7 @@ let s:palette.guide     = {'dark': "#2D3640",  'light': "#D9D8D7",  'mirage': "#
 let s:palette.line      = {'dark': "#151A1E",  'light': "#F3F3F3",  'mirage': "#242B38"}
 let s:palette.selection = {'dark': "#253340",  'light': "#F0EEE4",  'mirage': "#343F4C"}
 let s:palette.fg        = {'dark': "#E6E1CF",  'light': "#5C6773",  'mirage': "#D9D7CE"}
+let s:palette.fg_idleLn = {'dark': "#646e7a",  'light': "#646e7a",  'mirage': "#607080"}
 let s:palette.fg_idle   = {'dark': "#3E4B59",  'light': "#828C99",  'mirage': "#607080"}
 let s:palette.ntree_file = {'dark': "#f4b361",  'light': "#f4b361",  'mirage': "#f4b361"}
 let s:palette.ntree_folder = {'dark': "#d47c41",  'light': "#d47c41",  'mirage': "#d47c41"}
@@ -92,7 +93,7 @@ exe "hi! ColorColumn"   .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorColumn"  .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLine"    .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLineNr"  .s:fg_accent      .s:bg_line        .s:fmt_none
-exe "hi! LineNr"        .s:fg_guide       .s:bg_none        .s:fmt_none
+exe "hi! LineNr"        .s:fg_fg_idleLn      .s:bg_none        .s:fmt_none
 
 exe "hi! Directory"     .s:fg_fg_idle     .s:bg_none        .s:fmt_none
 exe "hi! DiffAdd"       .s:fg_string      .s:bg_panel       .s:fmt_none
